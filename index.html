@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Language Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Landing Section -->
+        <section id="landing" class="section active">
+            <div class="content">
+                <div class="header">
+                    <h1 class="title">English Language Test</h1>
+                    <p class="subtitle">Discover your English proficiency level with our quick assessment</p>
+                </div>
+                <div class="test-info">
+                    <div class="info-item">
+                        <span class="info-number">20</span>
+                        <span class="info-label">Questions</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-number">~10</span>
+                        <span class="info-label">Minutes</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-number">A2-C1</span>
+                        <span class="info-label">Levels</span>
+                    </div>
+                </div>
+                <button id="startBtn" class="btn btn-primary">Start Test</button>
+            </div>
+        </section>
+
+        <!-- Question Section -->
+        <section id="question" class="section">
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div id="progressFill" class="progress-fill"></div>
+                </div>
+                <div id="progressText" class="progress-text">Question 1 of 20</div>
+            </div>
+
+            <div class="question-container">
+                <div class="question-image-container">
+                    <img id="questionImage" src="" alt="Question illustration" class="question-image">
+                </div>
+                
+                <div class="question-content">
+                    <h2 id="questionText" class="question-title"></h2>
+                    
+                    <div id="answersContainer" class="answers-container">
+                        <!-- Answer options will be dynamically generated -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-navigation">
+                <button id="nextBtn" class="btn btn-secondary" disabled>Next Question</button>
+            </div>
+            
+            <!-- Question Progress Indicators -->
+            <div class="question-indicators">
+                <div id="questionCircles" class="question-circles">
+                    <!-- Circles will be generated dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Result Section -->
+        <section id="result" class="section">
+            <div class="content">
+                <div class="result-header">
+                    <div class="level-badge">
+                        <span id="resultLevel" class="level-text">B2</span>
+                    </div>
+                    <h2 class="result-title">Congratulations!</h2>
+                    <p id="resultDescription" class="result-description"></p>
+                </div>
+
+                <div class="score-container">
+                    <div class="score-item">
+                        <span id="correctAnswers" class="score-number">16</span>
+                        <span class="score-label">Correct Answers</span>
+                    </div>
+                    <div class="score-item">
+                        <span id="totalQuestions" class="score-number">20</span>
+                        <span class="score-label">Total Questions</span>
+                    </div>
+                    <div class="score-item">
+                        <span id="scorePercentage" class="score-number">80%</span>
+                        <span class="score-label">Accuracy</span>
+                    </div>
+                </div>
+
+                <div class="result-actions">
+                    <button id="tryAgainBtn" class="btn btn-primary">Try Again</button>
+                    <button id="shareBtn" class="btn btn-secondary">Share Result</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

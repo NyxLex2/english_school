@@ -79,8 +79,7 @@ class EnglishTest {
             circle.textContent = i + 1;
             circle.setAttribute('data-question', i);
             
-            // Add click handler for navigation
-            circle.addEventListener('click', () => this.goToQuestion(i));
+            // No click handler - circles are for visualization only
             
             this.questionCircles.appendChild(circle);
         }
@@ -95,8 +94,10 @@ class EnglishTest {
             circle.className = 'question-circle';
             
             if (index === this.currentQuestionIndex) {
+                // Current question being answered
                 circle.classList.add('current');
             } else if (this.userAnswers[index] !== undefined) {
+                // Previous questions - show final results (no navigation allowed)
                 const question = questions[index];
                 const userAnswer = this.userAnswers[index];
                 
@@ -106,16 +107,11 @@ class EnglishTest {
                     circle.classList.add('incorrect');
                 }
             }
+            // Future questions remain gray/default
         });
     }
 
-    goToQuestion(questionIndex) {
-        // Only allow navigation to previous questions or current question
-        if (questionIndex <= this.currentQuestionIndex) {
-            this.currentQuestionIndex = questionIndex;
-            this.displayQuestion();
-        }
-    }
+
 
     displayQuestion() {
         const question = questions[this.currentQuestionIndex];
@@ -145,7 +141,7 @@ class EnglishTest {
             this.answersContainer.appendChild(answerElement);
         });
         
-        // Reset next button
+        // Reset next button - only enable if current question is answered
         this.nextBtn.disabled = this.userAnswers[this.currentQuestionIndex] === undefined;
         this.nextBtn.textContent = this.currentQuestionIndex === this.totalQuestions - 1 ? 'Finish Test' : 'Next Question';
         
@@ -179,7 +175,7 @@ class EnglishTest {
     }
 
     nextQuestion() {
-        // Calculate score for current question
+        // Calculate score for current question (final answer - no changes allowed)
         const currentQuestion = questions[this.currentQuestionIndex];
         const userAnswer = this.userAnswers[this.currentQuestionIndex];
         
@@ -190,7 +186,7 @@ class EnglishTest {
         this.currentQuestionIndex++;
         
         if (this.currentQuestionIndex < this.totalQuestions) {
-            // Add transition animation
+            // Move to next question - previous answers are locked
             this.sections.question.style.transform = 'translateX(-20px)';
             this.sections.question.style.opacity = '0.8';
             
@@ -200,6 +196,7 @@ class EnglishTest {
                 this.sections.question.style.opacity = '1';
             }, 200);
         } else {
+            // All questions completed - show final results
             this.showResults();
         }
     }
@@ -276,6 +273,7 @@ class EnglishTest {
     }
 
     resetTest() {
+        // Reset all test state for a fresh start
         this.currentQuestionIndex = 0;
         this.userAnswers = [];
         this.score = 0;
@@ -284,7 +282,7 @@ class EnglishTest {
         // Reset progress bar
         this.progressFill.style.width = '0%';
         
-        // Clear question circles
+        // Clear question circles - they'll be recreated when test starts
         this.questionCircles.innerHTML = '';
     }
 

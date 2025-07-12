@@ -1,9 +1,9 @@
 // English Language Test Questions
-const questions = [
+const englishQuestions = [
     {
         id: 1,
         text: "Choose the correct form: 'I _____ breakfast every morning.'",
-        image: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=400&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=400&h=300",
         answers: [
             "eat",
             "eats", 
@@ -16,7 +16,7 @@ const questions = [
     {
         id: 2,
         text: "Choose the correct form: 'I _____ to the store yesterday.'",
-        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=400&h=300",
         answers: [
             "go",
             "went", 
@@ -29,7 +29,7 @@ const questions = [
     {
         id: 3,
         text: "What is the most appropriate response to 'How do you do?'",
-        image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=400&h=300",
         answers: [
             "I'm fine, thank you",
             "How do you do?",
@@ -42,7 +42,7 @@ const questions = [
     {
         id: 4,
         text: "Which sentence is grammatically correct?",
-        image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=400&h=300",
         answers: [
             "She don't like coffee",
             "She doesn't likes coffee",
@@ -55,7 +55,7 @@ const questions = [
     {
         id: 5,
         text: "What does 'break the ice' mean?",
-        image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=400&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=400&h=300",
         answers: [
             "To literally break frozen water",
             "To start a conversation in a social situation",
@@ -68,7 +68,7 @@ const questions = [
     {
         id: 6,
         text: "Choose the best option: 'If I _____ rich, I would travel around the world.'",
-        image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&h=300",
         answers: [
             "am",
             "was",
@@ -81,7 +81,7 @@ const questions = [
     {
         id: 7,
         text: "What is the meaning of 'to beat around the bush'?",
-        image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=400&h=300",
         answers: [
             "To avoid talking directly about a topic",
             "To walk through nature quietly",
@@ -94,7 +94,7 @@ const questions = [
     {
         id: 8,
         text: "Complete the sentence: 'She has been studying English _____ three years.'",
-        image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=400&h=300",
         answers: [
             "since",
             "for",
@@ -107,7 +107,7 @@ const questions = [
     {
         id: 9,
         text: "Which word best completes this sentence: 'The presentation was so _____ that half the audience fell asleep.'",
-        image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=400&h=300",
         answers: [
             "fascinating",
             "tedious",
@@ -120,7 +120,7 @@ const questions = [
     {
         id: 10,
         text: "What does 'to pull someone's leg' mean?",
-        image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&h=300",
         answers: [
             "To help someone walk",
             "To joke with someone or tease them",
@@ -133,7 +133,7 @@ const questions = [
     {
         id: 11,
         text: "Choose the correct form: 'I wish I _____ more attention in class yesterday.'",
-        image: "https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=400&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=400&h=300",
         answers: [
             "paid",
             "had paid",
@@ -146,7 +146,7 @@ const questions = [
     {
         id: 12,
         text: "What is the best synonym for 'ubiquitous'?",
-        image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&h=300",
         answers: [
             "Rare",
             "Obvious",
@@ -159,7 +159,7 @@ const questions = [
     {
         id: 13,
         text: "Complete this sentence: 'Not only _____ the project on time, but she also exceeded expectations.'",
-        image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=400&h=300",
         answers: [
             "she completed",
             "did she complete",
@@ -172,7 +172,7 @@ const questions = [
     {
         id: 14,
         text: "What does 'to burn the midnight oil' mean?",
-        image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=400&h=300",
         answers: [
             "To work or study late into the night",
             "To waste money on unnecessary things",
@@ -185,7 +185,7 @@ const questions = [
     {
         id: 15,
         text: "Which sentence demonstrates the correct use of the subjunctive mood?",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&h=300",
         answers: [
             "I suggest that he studies harder",
             "I suggest that he study harder",
@@ -198,9 +198,9 @@ const questions = [
     {
         id: 16,
         text: "What is the meaning of 'to throw caution to the wind'?",
-        image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+        image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=400&h=300",
         answers: [
-            "To be extremely careful about something",
+            "To be very careful",
             "To act recklessly without considering consequences",
             "To warn others about danger",
             "To change direction suddenly"
@@ -210,54 +210,54 @@ const questions = [
     },
     {
         id: 17,
-        text: "Choose the most sophisticated way to express disagreement:",
-        image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=300&fit=crop",
+        text: "Choose the most appropriate word: 'The politician's speech was full of _____ designed to appeal to voters' emotions.'",
+        image: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=400&h=300",
         answers: [
-            "You're wrong about that",
-            "I don't think so",
-            "I beg to differ on that point",
-            "That's not right"
-        ],
-        correctAnswer: 2,
-        level: "C1"
-    },
-    {
-        id: 18,
-        text: "What does 'to be at loggerheads' mean?",
-        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=300&fit=crop",
-        answers: [
-            "To be in strong disagreement",
-            "To be very confused",
-            "To be extremely tired",
-            "To be working together closely"
+            "rhetoric",
+            "logic",
+            "facts",
+            "statistics"
         ],
         correctAnswer: 0,
         level: "C1"
     },
     {
-        id: 19,
-        text: "Complete: 'Had I known about the traffic, I _____ earlier.'",
-        image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop",
+        id: 18,
+        text: "Which sentence uses 'whom' correctly?",
+        image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=400&h=300",
         answers: [
-            "would leave",
-            "would have left",
-            "will leave",
-            "left"
+            "Who did you give the book to?",
+            "To whom did you give the book?",
+            "Whom gave you the book?",
+            "Who's book is this?"
+        ],
+        correctAnswer: 1,
+        level: "C1"
+    },
+    {
+        id: 19,
+        text: "What does 'to be at sixes and sevens' mean?",
+        image: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&w=400&h=300",
+        answers: [
+            "To be very lucky",
+            "To be confused or disorganized",
+            "To be in perfect harmony",
+            "To be counting numbers"
         ],
         correctAnswer: 1,
         level: "C1"
     },
     {
         id: 20,
-        text: "Which word best fits: 'The politician's _____ speech failed to convince the skeptical audience.'",
-        image: "https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?w=400&h=300&fit=crop",
+        text: "Choose the correct form: 'Had I known about the meeting, I _____ attended.'",
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=400&h=300",
         answers: [
-            "bombastic",
-            "eloquent",
-            "persuasive",
-            "articulate"
+            "would",
+            "will have",
+            "would have",
+            "had"
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         level: "C1"
     }
 ];
@@ -288,5 +288,5 @@ const levelDescriptions = {
 
 // Export for use in main script
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { questions, levelDescriptions };
+    module.exports = { englishQuestions, levelDescriptions };
 } 

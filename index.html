@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Language Test</title>
+    <title>Language Proficiency Test</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -13,8 +13,8 @@
         <section id="landing" class="section active">
             <div class="content">
                 <div class="header">
-                    <h1 class="title">English Language Test</h1>
-                    <p class="subtitle">Discover your English proficiency level with our quick assessment</p>
+                    <h1 class="title">Language Proficiency Test</h1>
+                    <p class="subtitle">Discover your language proficiency level with our quick assessment</p>
                 </div>
                 <div class="test-info">
                     <div class="info-item">
@@ -30,7 +30,11 @@
                         <span class="info-label">Levels</span>
                     </div>
                 </div>
-                <button id="startBtn" class="btn btn-primary">Start Test</button>
+                <div class="language-selection">
+                    <button id="startEnBtn" class="btn btn-primary">🇬🇧 Start English Test</button>
+                    <button id="startDeBtn" class="btn btn-primary">🇩🇪 Start German Test</button>
+                    <button id="startPlBtn" class="btn btn-primary">🇵🇱 Start Polish Test</button>
+                </div>
             </div>
         </section>
 
@@ -103,7 +107,10 @@
         </section>
     </div>
 
+    <!-- Load question files -->
     <script src="questions.js"></script>
+    <script src="german_questions.js"></script>
+    <script src="polish_questions.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 
